@@ -27,7 +27,9 @@
 		<script type="text/template" id="item-template">
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-				<label><%- title %><%= completed ? ' --Finished!' : '' %></label>
+				<label><%- title %><%= completed ? ' -- Finished!' : '' %></label>
+				
+				<button class="edit-btn"></button>
 				<button class="destroy"></button>
 			</div>
 			<input class="edit" value="<%- title %>">
